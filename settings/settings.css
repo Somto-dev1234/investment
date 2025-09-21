@@ -1,0 +1,129 @@
+:root {
+      --primary: #2a2a72;
+      --primary-dark: #1e1e56;
+      --bg: #f9f9fb;
+      --white: #fff;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      margin: 0;
+      padding: 0;
+    }
+
+    .settings {
+      max-width: 1000px;
+      margin: 6rem auto;
+      padding: 2.5rem;
+      background: var(--white);
+      border-radius: 1.5rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    .settings header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .settings header h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .settings_sections {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .settings_card {
+      background: #fafafa;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .settings_card h3 {
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      color: var(--primary-dark);
+    }
+
+    .form_group {
+      margin-bottom: 1.2rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form_group label {
+      margin-bottom: 0.4rem;
+      font-weight: 500;
+    }
+
+    .form_group input,
+    .form_group select {
+      padding: 0.9rem;
+      border: 1px solid #ccc;
+      border-radius: 0.6rem;
+      font-size: 0.95rem;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 0.9rem 1.5rem;
+      border-radius: 0.6rem;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-size: 1rem;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .toggle-switch {
+      position: relative;
+      width: 55px;
+      height: 28px;
+    }
+    .toggle-switch input {
+      display: none;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      inset: 0;
+      background: #ccc;
+      border-radius: 34px;
+      transition: 0.4s;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 4px;
+      bottom: 4px;
+      background: white;
+      border-radius: 50%;
+      transition: 0.4s;
+    }
+    input:checked + .slider {
+      background: var(--primary);
+    }
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+
+    @media (max-width: 768px) {
+      .settings {
+        margin: 3rem 1rem;
+        padding: 2rem 1.2rem;
+      }
+      .settings_sections {
+        gap: 1.5rem;
+      }
+    }

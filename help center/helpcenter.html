@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+  <title>Crypto Investment Dashboard</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./helpcenter.css">
+</head>
+<body>
+  <nav>
+    <div class="container nav_container">
+      <a href="../index.html" class="nav_logo">
+        <img src="../assets/logo.png" alt="nav logo">
+      </a>
+      <div class="nav_search">
+        <i class="uil uil-search"></i>
+        <input type="search" placeholder="Search">
+      </div>
+      <div class="nav_profile-wrapper">
+        <button class="nav_theme-btn">
+          <i class="uil uil-moon"></i>
+        </button>
+        <div class="nav_profile">
+          <div class="nav_profile-photo">
+            <img src="../assets/profile-1.jpg" alt="profile 1">
+          </div>
+          <h5>Egbujor somto</h5>
+          <i class="uil uil-angle-down"></i>
+        </div>
+        <button class="nav_menu-btn">
+          <i class="uil uil-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+      <!--SIDEBAR -->
+      <menu class="sidebar">
+        <a href="../index.html" class="active">
+            <i class="uil uil-create-dashboard"></i>
+            <h5>Dashboard</h5>
+        </a>
+        <a href="">
+            <i class="uil uil-exchange"></i>
+            <h5>Exchange</h5>
+        </a>
+      
+        <a href="wallet/wallet.html">
+            <i class="uil uil-wallet"></i>
+            <h5>Wallet</h5>
+        </a>
+      
+        <a href="transcations/transcation.html">
+            <i class="uil uil-transaction"></i>
+            <h5>Transactions</h5>
+        </a>
+        <a href="">
+            <i class="uil uil-chart"></i>
+            <h5>Analytics</h5>
+        </a>
+        <a href="">
+            <i class="uil uil-envelopes"></i> 
+            <h5>Messages</h5>
+        </a>
+        <a href="../help center/helpcenter.html">
+            <i class="uil uil-question-circle"></i> 
+            <h5>Help Center</h5>
+        </a>
+        <a href="../settings/settings.html">
+            <i class="uil uil-setting"></i> 
+            <h5>Settings</h5>
+        </a>
+        <button class="sidebar-close-btn">
+
+            <i class="uil uil-multiply"></i>
+        </button>
+      </menu>
+
+<!-- HELP CENTER -->
+<section class="helpCenter" id="help-center">
+  <header class="helpCenter_header">
+    <h2>Help Center</h2>
+    <p class="text-muted">Find quick answers to common questions or submit a complaint</p>
+  </header>
+
+  <!-- FAQ -->
+  <div class="faq">
+    <div class="faq_item">
+      <button class="faq_question">
+        <div>
+          <i class="uil uil-question-circle"></i>
+          How do I deposit funds?
+        </div>
+        <span class="faq_toggle">+</span>
+      </button>
+      <div class="faq_answer">
+        <p>You can deposit funds through your <strong>Wallet</strong> page by selecting your preferred payment method.</p>
+      </div>
+    </div>
+
+    <div class="faq_item">
+      <button class="faq_question">
+        <div>
+          <i class="uil uil-lock"></i>
+          How do I reset my password?
+        </div>
+        <span class="faq_toggle">+</span>
+      </button>
+      <div class="faq_answer">
+        <p>Go to <strong>Settings → Security</strong> and click on "Reset Password". Follow the instructions sent to your email.</p>
+      </div>
+    </div>
+
+    <div class="faq_item">
+      <button class="faq_question">
+        <div>
+          <i class="uil uil-headphones-alt"></i>
+          How do I contact support?
+        </div>
+        <span class="faq_toggle">+</span>
+      </button>
+      <div class="faq_answer">
+        <p>You can reach support via <strong>Messages → New Ticket</strong> or email us at <a href="mailto:support@crypto.com">support@crypto.com</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Complaint Form -->
+  <div class="complaintForm">
+    <h3>Submit a Complaint</h3>
+    <form id="complaint-form">
+      <div class="form_group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form_group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form_group">
+        <label for="message">Complaint</label>
+        <textarea id="message" name="message" rows="4" placeholder="Describe your issue..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">Submit Complaint</button>
+    </form>
+  </div>
+</section>
+
+
+      <script src="../index.js"></script>

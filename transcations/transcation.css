@@ -1,0 +1,39 @@
+body {
+    grid-template-columns: 17rem auto;
+}
+
+.transacionsTable {
+    height: fit-content;
+    margin-top: 6rem;
+}
+
+.transacionsTable th {
+    text-align: left;
+    padding: 0.8rem;
+}
+
+.transacionsTable td {
+    padding: 1rem;
+}
+
+.transacionsTable tbody tr:nth-child(odd) {
+    background: var(--color-white);
+
+}
+
+@media screen and (max-width: 1024px) {
+    body{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .transacionsTable thead tr,   .transacionsTable thead tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+.transacionsTable tbody tr:nth-child(even) {
+    border-left: 2px solid var(--color-white);
+}
+}
